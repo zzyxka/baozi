@@ -13,4 +13,4 @@ hexo 简约风格主题
 - [x] **关于我页** 展示
 - [x] **其他** 文章搜索/样式处理(移动端兼容)
 
-![](https://raw.githubusercontent.com/zzyxka/images/main/20220709174118.png)
+![](https://raw.githubusercontent.com/zzyxka/images/main/20220709174231.png)
