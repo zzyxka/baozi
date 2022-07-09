@@ -1,0 +1,20 @@
+<section class="index-container">
+	<% page.posts.each(function (post) { %>
+	<article class="post">
+		<div class="post-title">
+			<a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+		</div>
+		<div class="post-content"><%- post.excerpt %></div>
+		<div class="post-meta">
+			<span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+		</div>
+	</article>
+	<% }) %> <%- partial('_partial/paginator') %>
+</section>
+<!-- top -->
+<a id="goTop" class="go-top" type="button">^</a>
+<script>
+	goTop.addEventListener('click', function (e) {
+		document.querySelector('.index-container').scrollTo(0, 0);
+	});
+</script>

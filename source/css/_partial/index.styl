@@ -1,0 +1,43 @@
+.index-container {
+    flex: 1;
+    overflow: auto;
+    padding: 0 10px;
+    box-shadow: 0 0 2px #ddd;
+
+    .post {
+        max-width: 1700px;
+        margin: 1rem auto;
+        padding: 1rem;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 2px #ddd;
+
+        .post-title {
+            font-size: 1.4rem;
+
+            .post-title-link {
+                color: #368CCB;
+                text-decoration: none;
+            }
+        }
+
+        .post-content {
+            overflow: hidden;
+            min-height: 1rem;
+
+            a {
+                color: #368CCB;
+                text-decoration: none;
+            }
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .post-meta {
+            color: #BABABA;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 1rem;
+    box-shadow: 0 2px 0 0 #f2f2f2;
+
+    .title .logo {
+        color: #368CCB;
+        text-decoration: none;
+        font-size: 2rem;
+        text-decoration: none;
+    }
+
+    .title span {
+        color: #aaa;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+
+        .menu-item {
+            display: inline-block;
+        }
+
+        .menu-item > a {
+            color: #AAA;
+            text-decoration: none;
+
+            &:hover {
+                color: #368CCB;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: block;
+        text-align: center;
+
+        .menu {
+            display: block;
+
+            .menu-item > a {
+                display: inline-block;
+                margin: 5px 0;
+                padding: 5px;
+                background: rgba(0, 0, 0, 0.1);
+                width: 60px;
+            }
+        }
+
+        .title span {
+            display: block;
+        }
+    }
+}
+
+@import '_partial/search';

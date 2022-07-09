@@ -1,0 +1,90 @@
+.highlight {
+  margin: 10px 0;
+  background-color: #272c34;
+  color: #fff;
+
+  td .line {
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  td.gutter {
+    text-align: right;
+  }
+
+  td.gutter .line {
+    display: inline-block;
+    padding: 0 10px;
+    color: #495162;
+    text-align: right;
+  }
+
+  td.code .line {
+    // 注释
+    .comment {
+      color: #676f7d;
+    }
+
+    // 标签，如：p/div/ol
+    .tag {
+      color: #bbbbbb;
+    }
+
+    // 标签名
+    .name {
+      color: #e06c75;
+    }
+
+    // 标签属性
+    .attr {
+      color: #98c379;
+    }
+
+    // 标签属性值
+    .string {
+      color: #e5c07b;
+    }
+
+    // 声明，如：const
+    .keyword {
+      color: #56b6c2;
+    }
+
+    .built_in {
+      color: #98c379;
+    }
+  }
+}
+
+.highlight, .highlight>table, .highlight>table>tbody, .highlight>table>tbody>tr {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.highlight>table>tbody>tr {
+  display: flex;
+}
+
+.highlight>table>tbody>tr>.code {
+  display: block;
+  flex: 1;
+  overflow: auto;
+}
+
+.highlight>table>tbody>tr>.code::-webkit-scrollbar {
+  padding-left: 4.5rem;
+  width: 6px;
+  height: 12px;
+  background-color: transparent;
+}
+
+.highlight>table>tbody>tr>.code::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+.highlight>table>tbody>tr>.code::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(144, 147, 153, 0.4);
+}
