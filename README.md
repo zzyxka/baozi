@@ -1,4 +1,8 @@
-# hexo 简约风格主题
+# theme-baozi
+
+![](https://raw.githubusercontent.com/zzyxka/images/main/favoicn.ico)
+
+hexo 简约风格主题
 
 风格简单，适合做笔记/分享的主题，满足文章阅读各项功能使用，没有使用各类华而不实的动效。
 
