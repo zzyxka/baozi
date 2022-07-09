@@ -1,0 +1,2 @@
+# baozi
+hexo-theme
