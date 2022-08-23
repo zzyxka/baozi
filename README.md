@@ -2,7 +2,7 @@
 
 ![](https://raw.githubusercontent.com/zzyxka/images/main/favoicn.ico)
 
-http://baozi.life/
+https://zzyxka.github.io/
 
 hexo 简约风格主题
 
