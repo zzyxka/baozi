@@ -3,5 +3,5 @@ menu:
   关于我: /about
 
 beian:
-  enable: true
-  icp: 豫ICP备2022015760号
+  enable: false
+  # icp: 豫ICP备2022015760号
