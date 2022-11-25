@@ -1,13 +1,22 @@
 <article class="article-container">
-	<div class="post-toc"><%- toc(page.content, { list_number: false }) %></div>
+	<div class="post-toc">
+		<h3>本文目录</h3>
+		<%- toc(page.content, { list_number: false }) %>
+	</div>
 	<div class="post-container">
 		<div class="post-title">
-			<h2 class="title"><%= page.title %></h2>
+			<h2 class="title">
+				<%= page.title %>
+			</h2>
 		</div>
 		<div class="post-meta">
-			<span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+			<span class="post-time">
+				<%- date(page.date, "YYYY-MM-DD" ) %>
+			</span>
 		</div>
-		<div class="post-content"><%- page.content %></div>
+		<div class="post-content">
+			<%- page.content %>
+		</div>
 	</div>
 </article>
 <!-- top -->

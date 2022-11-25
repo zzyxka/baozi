@@ -1,5 +1,50 @@
+.home-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar {
+    margin: 10px;
+    width: 200px;
+    overflow: hidden;
+
+    img.avatar {
+        display: block;
+        width: 100px;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+    }
+
+    .notice {
+        border: 1px solid #dbdbde;
+
+        h3 {
+            padding: 5px 0;
+            margin: 0;
+            text-align: center;
+            height: 18px;
+            line-height: 18px;
+            font-size: 1rem;
+            background: #dbdbde;
+        }
+
+        p {
+            margin: 8px;
+            font-size: 0.75rem;
+
+            a {
+                text-decoration: none;
+                color: #368ccb;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
 .index-container {
-    flex: 1;
     overflow: auto;
     padding: 0 10px;
     box-shadow: 0 0 2px #ddd;

@@ -5,3 +5,7 @@ menu:
 beian:
   enable: false
   # icp: 豫ICP备2022015760号
+
+sidebar:
+  avatar: https://avatars.githubusercontent.com/u/26628346?v=4
+  notice: 博客/图床使用github托管，如遇图片裂开，参考 <a href="https://zzyxka.github.io/2022/11/26/github-address/">这篇文章</a>
