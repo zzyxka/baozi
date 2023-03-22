@@ -30,6 +30,7 @@
 					<span class="post-time">
 						<%- date(post.date, "YYYY-MM-DD" ) %>
 					</span>
+					<a class="post-read-more-link" href="<%- url_for(post.path) %>">查看全文</a>
 				</div>
 			</article>
 			<% }) %>
