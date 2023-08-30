@@ -1,6 +1,9 @@
 <section class="sidebar">
   <% if (theme.sidebar.avatar) { %>
-  <img class="avatar" src="<%= theme.sidebar.avatar %>" />
+  <div class="avatar-container">
+    <img class="avatar" src="<%= theme.sidebar.avatar %>" />
+    <%- partial('_partial/search') %>
+  </div>
   <p><%= config.title %></p>
   <p><%= config.subtitle %></p>
   <% } %>

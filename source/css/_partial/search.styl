@@ -1,3 +1,18 @@
+.search-btn {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #368ccb;
+  opacity: 0.8;
+  border-radius: 50%;
+}
+
+.search-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
 .search-container {
   display: none;
   position: fixed;
@@ -9,6 +24,7 @@
   background: rgba(0, 0, 0, 0.7);
 
   .search-content {
+    border-radius: 4px;
     position: absolute;
     top: 20px;
     left: 10vw;
@@ -24,6 +40,7 @@
       box-shadow: 0 1px 0 0 #f2f2f2;
 
       input {
+        border-radius: 10px;
         border: 2px solid #368ccb;
         padding: 0.75rem;
         font-size: 1.25rem;

@@ -1,65 +1,55 @@
-.header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 100%;
-    background: #fff;
-    box-sizing: border-box;
-    padding: 1rem;
-    box-shadow: 0 2px 0 0 #f2f2f2;
+.sidebar {
+  animation: leftToView 0.5s ease-in-out;
+  padding: 20px;
+  width: 260px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 0 2px #ddd;
+  text-align: center;
 
-    .title .logo {
-        color: #368CCB;
+  .avatar-container {
+    display: inline-block;
+    position: relative;
+
+    .search-btn {
+      right: -10px;
+      bottom: 10px;
+    }
+  }
+
+  img.avatar {
+    display: block;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+
+  .notice {
+    text-align: left;
+    border: 1px solid #dbdbde;
+
+    h3 {
+      padding: 5px 0;
+      margin: 0;
+      text-align: center;
+      height: 18px;
+      line-height: 18px;
+      font-size: 1rem;
+      background: #dbdbde;
+    }
+
+    p {
+      margin: 8px;
+      font-size: 0.75rem;
+
+      a {
         text-decoration: none;
-        font-size: 2rem;
-        text-decoration: none;
+        color: #368ccb;
+      }
     }
+  }
 
-    .title span {
-        color: #aaa;
-    }
-
-    .menu {
-        margin: 0;
-        padding: 0;
-
-        .menu-item {
-            display: inline-block;
-        }
-
-        .menu-item > a {
-            color: #AAA;
-            text-decoration: none;
-
-            &:hover {
-                color: #368CCB;
-                cursor: pointer;
-            }
-        }
-    }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
-
-@media screen and (max-width: 600px) {
-    .header {
-        display: block;
-        text-align: center;
-
-        .menu {
-            display: block;
-
-            .menu-item > a {
-                display: inline-block;
-                margin: 5px 0;
-                padding: 5px;
-                background: rgba(0, 0, 0, 0.1);
-                width: 60px;
-            }
-        }
-
-        .title span {
-            display: block;
-        }
-    }
-}
-
-@import '_partial/search';

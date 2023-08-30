@@ -1,0 +1,27 @@
+.header-container {
+  animation: topToView 0.5s ease-in-out;
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+
+  .header-title {
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+
+    span {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .header-avatar {
+    position: absolute;
+    width: 36px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+}

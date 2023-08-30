@@ -41,8 +41,40 @@ code {
     background: rgb(245, 245, 245);
 }
 
+@keyframes topToView {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes leftToView {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @import '_partial/sidebar';
 @import '_partial/index';
+@import '_partial/header';
 @import '_partial/post';
 @import '_partial/footer';
 @import '_partial/misc';
+@import '_partial/search';

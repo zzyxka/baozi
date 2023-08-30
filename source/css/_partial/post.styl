@@ -1,4 +1,11 @@
 .article-container {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-body {
   flex: 1;
   overflow: hidden;
   background-color: #fff;
@@ -6,6 +13,7 @@
   box-shadow: 0 0 2px #ddd;
 
   .post-toc {
+    animation: leftToView 0.5s ease-in-out;
     position: relative;
     width: 300px;
     height: 100%;
@@ -50,6 +58,7 @@
   }
 
   .post-container {
+    animation: fadeIn 0.5s ease-in-out;
     flex: 1;
     height: 100%;
     overflow: auto;

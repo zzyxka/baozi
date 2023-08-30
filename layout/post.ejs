@@ -1,20 +1,23 @@
 <article class="article-container">
-  <div class="post-toc">
-    <h3>本文目录</h3>
-    <%- toc(page.content, { list_number: false }) %>
-  </div>
-  <div class="post-container">
-    <div class="post-title">
-      <h2 class="title">
-        <%= page.title %>
-      </h2>
+  <%- partial('_partial/header') %>
+  <section class="article-body">
+    <div class="post-toc">
+      <h3>本文目录</h3>
+      <%- toc(page.content, { list_number: false }) %>
     </div>
-    <div class="post-meta">
+    <div class="post-container">
+      <div class="post-title">
+        <h2 class="title">
+          <%= page.title %>
+        </h2>
+      </div>
+      <div class="post-meta">
+      </div>
+      <div class="post-content">
+        <%- page.content %>
+      </div>
     </div>
-    <div class="post-content">
-      <%- page.content %>
-    </div>
-  </div>
+  </section>
 </article>
 <!-- go-top -->
 <a id="goTop" class="go-top" type="button">

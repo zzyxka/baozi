@@ -3,52 +3,8 @@
     overflow: hidden;
 }
 
-.sidebar {
-    padding: 20px;
-    width: 260px;
-    overflow: hidden;
-    box-sizing: border-box;
-    box-shadow: 0 0 2px #ddd;
-    text-align: center;
-
-    img.avatar {
-        display: block;
-        width: 100px;
-        border-radius: 50%;
-        margin: 0 auto 10px;
-    }
-
-    .notice {
-        text-align: left;
-        border: 1px solid #dbdbde;
-
-        h3 {
-            padding: 5px 0;
-            margin: 0;
-            text-align: center;
-            height: 18px;
-            line-height: 18px;
-            font-size: 1rem;
-            background: #dbdbde;
-        }
-
-        p {
-            margin: 8px;
-            font-size: 0.75rem;
-
-            a {
-                text-decoration: none;
-                color: #368ccb;
-            }
-        }
-    }
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-}
-
 .index-container {
+    animation: fadeIn 0.5s ease-in-out;
     flex: 1;
     overflow: auto;
     padding: 0 10px;

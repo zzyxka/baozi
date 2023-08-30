@@ -1,58 +1,65 @@
-<a type="button" id="btnSearch" class="search-btn">搜索</a>
+<a type="button" id="btnSearch" class="search-btn">
+  <svg t="1693384788445" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4110" width="30" height="30">
+    <path d="M447.325002 129.919978c-178.868807 0-323.872319 145.003512-323.872319 323.874365s145.003512 323.874365 323.872319 323.874365c178.870854 0 323.874365-145.003512 323.874365-323.874365S626.195855 129.919978 447.325002 129.919978zM447.325002 713.712071c-143.31915 0-259.915681-116.598578-259.915681-259.917728s116.596532-259.917728 259.915681-259.917728 259.917728 116.598578 259.917728 259.917728S590.643128 713.712071 447.325002 713.712071z" fill="#ffffff" p-id="4111"></path>
+    <path d="M891.573945 840.061734 748.236376 696.699606c-13.43601 16.625656-28.371164 31.91385-44.338834 46.099944l142.458549 142.481062c6.246261 6.246261 14.427594 9.368368 22.60995 9.368368s16.363689-3.123131 22.60995-9.368368C904.065444 872.789113 904.065444 852.553233 891.573945 840.061734z" fill="#ffffff" p-id="4112"></path>
+  </svg>
+</a>
 <div id="searchContainer" class="search-container">
-	<div id="searchContent" class="search-content">
-		<div class="search-input">
-			<input id="searchInput" type="text" placeholder="查找文章" />
-		</div>
-		<div id="searchResult" class="search-result-container"></div>
-	</div>
+  <div id="searchContent" class="search-content">
+    <div class="search-input">
+      <input id="searchInput" type="text" placeholder="查找文章" />
+    </div>
+    <div id="searchResult" class="search-result-container"></div>
+  </div>
 </div>
 <script>
-	function keyHandler(e) {
-		if (e.keyCode == 27) {
-			closeModal();
-		}
-	}
-	function openModal() {
-		disableBodyScroll();
-		$('.search-container').addClass('show-search');
-		$('#searchInput').focus();
-		document.addEventListener('keydown', keyHandler);
-	}
-	function closeModal() {
-		enableBodyScroll();
-		$('#searchInput').val('');
-		$('#searchResult').empty();
-		$('.search-container').removeClass('show-search');
-		document.removeEventListener('keydown', keyHandler);
-	}
-	// 防止首页内容滚动
-	function disableBodyScroll() {
-		document.body.style.width = '100%';
-		var body = document.body;
-		window.stTemp = Math.max(body.scrollTop, document.documentElement.scrollTop);
-		body.style.overflow = 'hidden';
-		body.style.position = 'fixed';
-		body.style.top = (-window.stTemp || 0) + 'px';
-	}
-	// 恢复首页滚动
-	function enableBodyScroll() {
-		document.body.style.width = '';
-		var body = document.body;
-		body.style.overflow = 'scroll';
-		body.style.position = 'static';
-		body.style.top = '0px';
-		body.scrollTop = window.stTemp;
-		document.documentElement.scrollTop = window.stTemp;
-	}
-	// 阻止冒泡，防止点击弹窗内容触发弹窗关闭
-	searchContent.addEventListener('click', function (e) {
-		e.stopPropagation();
-	});
-	// 点击搜索打开搜索弹窗
-	btnSearch.addEventListener('click', openModal);
-	// 关闭搜索弹窗
-	searchContainer.addEventListener('click', closeModal);
-	// 注册搜索函数
-	searchFunc('search.json', 'searchInput', 'searchResult');
+  function keyHandler(e) {
+    if (e.keyCode == 27) {
+      closeModal();
+    }
+  }
+
+  function openModal() {
+    disableBodyScroll();
+    $('.search-container').addClass('show-search');
+    $('#searchInput').focus();
+    document.addEventListener('keydown', keyHandler);
+  }
+
+  function closeModal() {
+    enableBodyScroll();
+    $('#searchInput').val('');
+    $('#searchResult').empty();
+    $('.search-container').removeClass('show-search');
+    document.removeEventListener('keydown', keyHandler);
+  }
+  // 防止首页内容滚动
+  function disableBodyScroll() {
+    document.body.style.width = '100%';
+    var body = document.body;
+    window.stTemp = Math.max(body.scrollTop, document.documentElement.scrollTop);
+    body.style.overflow = 'hidden';
+    body.style.position = 'fixed';
+    body.style.top = (-window.stTemp || 0) + 'px';
+  }
+  // 恢复首页滚动
+  function enableBodyScroll() {
+    document.body.style.width = '';
+    var body = document.body;
+    body.style.overflow = 'hidden';
+    body.style.position = 'static';
+    body.style.top = '0px';
+    body.scrollTop = window.stTemp;
+    document.documentElement.scrollTop = window.stTemp;
+  }
+  // 阻止冒泡，防止点击弹窗内容触发弹窗关闭
+  searchContent.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+  // 点击搜索打开搜索弹窗
+  btnSearch.addEventListener('click', openModal);
+  // 关闭搜索弹窗
+  searchContainer.addEventListener('click', closeModal);
+  // 注册搜索函数
+  searchFunc('search.json', 'searchInput', 'searchResult');
 </script>
