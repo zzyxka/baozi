@@ -1,0 +1,13 @@
+<section class="home-container">
+  <%- partial('_partial/sidebar') %>
+  <ul class="post-archive">
+    <% site.categories.each(function (category) { %>
+    <span><%= category.name %>(<%= category.posts.length %>)</span>
+    <% category.posts.forEach(function(post) { %>
+    <li class="post-item">
+      <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    </li>
+    <% }) %>
+    <% }) %>
+  </ul>
+</section>

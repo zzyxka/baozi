@@ -4,9 +4,12 @@
 }
 
 .sidebar {
-    margin: 10px;
-    width: 200px;
+    padding: 20px;
+    width: 260px;
     overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px #ddd;
+    text-align: center;
 
     img.avatar {
         display: block;
@@ -16,6 +19,7 @@
     }
 
     .notice {
+        text-align: left;
         border: 1px solid #dbdbde;
 
         h3 {
@@ -45,23 +49,26 @@
 }
 
 .index-container {
+    flex: 1;
     overflow: auto;
     padding: 0 10px;
-    box-shadow: 0 0 2px #ddd;
 
     .post {
         max-width: 1700px;
+        width: 90%;
         margin: 1rem auto;
         padding: 1rem;
         background-color: #fff;
-        border: 1px solid #ddd;
-        box-shadow: 0 0 2px #ddd;
+        border-bottom: 1px solid #f1f1f4;
 
         .post-title {
-            font-size: 1.4rem;
+            font-size: 1.8rem;
 
             .post-title-link {
-                color: #368CCB;
+                letter-spacing: -0.04em;
+                font-weight: 700;
+                line-height: 1.45em;
+                color: #4a4a4a;
                 text-decoration: none;
             }
         }
@@ -89,5 +96,9 @@
                 text-decoration: none;
             }
         }
+    }
+
+    .post.post-list-item:last-of-type {
+        border: none;
     }
 }

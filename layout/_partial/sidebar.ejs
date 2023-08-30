@@ -1,0 +1,15 @@
+<section class="sidebar">
+  <% if (theme.sidebar.avatar) { %>
+  <img class="avatar" src="<%= theme.sidebar.avatar %>" />
+  <p><%= config.title %></p>
+  <p><%= config.subtitle %></p>
+  <% } %>
+  <% if (theme.sidebar.notice) { %>
+  <div class="notice">
+    <h3>Notice</h3>
+    <p>
+      <%- theme.sidebar.notice %>
+    </p>
+  </div>
+  <% } %>
+</section>
