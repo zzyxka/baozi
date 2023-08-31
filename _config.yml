@@ -4,7 +4,7 @@ menu:
 
 beian:
   enable: false
-  # icp: 省ICP备xxxxx号
+  icp: 省ICP备xxxxx号
 
 sidebar:
   avatar: https://avatars.githubusercontent.com/u/26628346?v=4
