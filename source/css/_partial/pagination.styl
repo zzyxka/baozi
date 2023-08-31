@@ -1,0 +1,25 @@
+.page-nav {
+  text-align: center;
+
+  .page-number, .prev, .next {
+    margin-right: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .page-number:not(.current):hover, .next:hover, .prev:hover {
+    background-color: #ebf1fe;
+    color: #197afa;
+  }
+
+  .page-number.current {
+    background-color: #197afa;
+    color: #fff;
+  }
+}
