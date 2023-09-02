@@ -1,4 +1,4 @@
-# theme-baozi
+# hexo-theme-baozi
 
 https://zzyxka.github.io/
 
