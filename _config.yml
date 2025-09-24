@@ -8,6 +8,6 @@ beian:
 
 sidebar:
   avatar: https://avatars.githubusercontent.com/u/26628346?v=4
-  notice: 网站中图片存储在 github，如遇图片裂开，参考 <a href="https://zzyxka.github.io/2022/11/26/github-address/">github相关网址打不开的解决办法</a>
+  notice: Hexo 主题 baozi 示例站点，个人站点请访问 <a href="https://zzyxka.github.io" target="_blank">https://zzyxka.github.io</a>
   category: true
-  github: https://github.com/zzyxka
+  github: https://github.com/zzyxka/baozi

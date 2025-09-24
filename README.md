@@ -1,6 +1,6 @@
 # hexo-theme-baozi
 
-预览：https://zzyxka.github.io/
+预览：https://zzyxka.github.io/baozi-demo/
 
 hexo 简约风格主题，初心为足够简单又足够丰富。
 
